@@ -51,19 +51,7 @@ useEffect( () => {
 
  return (
    <View style={styles.container}>
-     <TouchableOpacity
-       style={{ height: 40, justifyContent: "center" }}
-       onPress={addColor}
-     >
-       <Text style={{ color: "red" }}>Add colour</Text>
-     </TouchableOpacity>
-     <TouchableOpacity
-       style={{ height: 40, justifyContent: "center" }}
-       onPress={resetColor}
-     >
-       <Text style={{ color: "red" }}>Reset colour</Text>
-     </TouchableOpacity>
-     
+
      <FlatList style={styles.list} data={colorArray} renderItem={renderItem} numColumns={5} />
    </View>
  );
